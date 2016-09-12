@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoSOLID.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,15 @@ namespace DemoSOLID
     {
         static void Main(string[] args)
         {
+            List<Customer> customers = new List<Customer>();
+            customers.Add(new SilverCustomer());
+            customers.Add(new GoldCustomer());
+            //customers.Add(new Enquiry());
 
+            foreach (Customer customer in customers)
+            {
+                customer.Add();
+            }
         }
     }
 }

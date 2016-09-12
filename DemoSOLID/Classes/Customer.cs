@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoSOLID.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DemoSOLID.Classes
 {
-    public class Customer
+    public class Customer : IDiscount, IDatabase
     {
         private FileLogger logger = new FileLogger();
 
@@ -32,7 +33,7 @@ namespace DemoSOLID.Classes
             return totalSales;
         }
 
-        public void Add()
+        public virtual void Add()
         {
             try
             {
