@@ -10,6 +10,28 @@ namespace DemoSOLID.Classes
     {
         private FileLogger logger = new FileLogger();
 
+        private int _CustType;
+
+        public int CustType
+        {
+            get { return _CustType; }
+            set { _CustType = value; }
+        }
+
+        public virtual double GetDiscount(double totalSales)
+        {
+            //if (_CustType == 1)
+            //{
+            //    return totalSales - 100;
+            //}
+            //else
+            //{
+            //    return totalSales - 50;
+            //}
+
+            return totalSales;
+        }
+
         public void Add()
         {
             try
