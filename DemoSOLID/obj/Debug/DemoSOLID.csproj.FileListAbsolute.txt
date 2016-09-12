@@ -2,6 +2,5 @@ F:\Test Projects\git-mine\DemoSOLID\DemoSOLID\DemoSOLID\bin\Debug\DemoSOLID.exe.
 F:\Test Projects\git-mine\DemoSOLID\DemoSOLID\bin\Debug\DemoSOLID.exe.config
 F:\Test Projects\git-mine\DemoSOLID\DemoSOLID\bin\Debug\DemoSOLID.exe
 F:\Test Projects\git-mine\DemoSOLID\DemoSOLID\bin\Debug\DemoSOLID.pdb
-F:\Test Projects\git-mine\DemoSOLID\DemoSOLID\obj\Debug\DemoSOLID.csprojResolveAssemblyReference.cache
 F:\Test Projects\git-mine\DemoSOLID\DemoSOLID\obj\Debug\DemoSOLID.exe
 F:\Test Projects\git-mine\DemoSOLID\DemoSOLID\obj\Debug\DemoSOLID.pdb

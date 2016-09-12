@@ -9,9 +9,7 @@ namespace DemoSOLID.Classes
 {
     public class CustomerWithRead : IDatabaseV1
     {
-        private FileLogger logger = new FileLogger();
-
-        public void Add()
+        public void Add(ILogger logger)
         {
             try
             {

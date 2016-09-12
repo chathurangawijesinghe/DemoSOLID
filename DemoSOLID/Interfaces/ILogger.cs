@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DemoSOLID.Interfaces
 {
-    public interface IDatabase
+    public interface ILogger
     {
-        void Add(ILogger logger);
+        void Handle(string error);
     }
 }

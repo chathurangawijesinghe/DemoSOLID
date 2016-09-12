@@ -9,8 +9,6 @@ namespace DemoSOLID.Classes
 {
     public class Customer : IDiscount, IDatabase
     {
-        private FileLogger logger = new FileLogger();
-
         private int _CustType;
 
         public int CustType
@@ -33,7 +31,7 @@ namespace DemoSOLID.Classes
             return totalSales;
         }
 
-        public virtual void Add()
+        public virtual void Add(ILogger logger)
         {
             try
             {

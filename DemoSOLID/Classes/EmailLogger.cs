@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DemoSOLID.Classes
 {
-    public class FileLogger : ILogger
+    public class EmailLogger : ILogger
     {
         public void Handle(string error)
         {
-            System.IO.File.WriteAllText(@"log.txt", error);
+            // send errors in email
         }
     }
 }

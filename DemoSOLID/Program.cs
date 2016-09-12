@@ -19,15 +19,15 @@ namespace DemoSOLID
 
             foreach (Customer customer in customers)
             {
-                customer.Add();
+                customer.Add(new FileLogger());
             }
 
             IDatabase i = new Customer();
-            i.Add();
+            i.Add(new EventViewerLogger());
 
             IDatabaseV1 iv1 = new CustomerWithRead();
             iv1.Read();
-            iv1.Add();
+            iv1.Add(new EmailLogger());
         }
     }
 }
