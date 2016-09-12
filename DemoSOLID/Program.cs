@@ -1,4 +1,5 @@
 ﻿using DemoSOLID.Classes;
+using DemoSOLID.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,13 @@ namespace DemoSOLID
             {
                 customer.Add();
             }
+
+            IDatabase i = new Customer();
+            i.Add();
+
+            IDatabaseV1 iv1 = new CustomerWithRead();
+            iv1.Read();
+            iv1.Add();
         }
     }
 }
